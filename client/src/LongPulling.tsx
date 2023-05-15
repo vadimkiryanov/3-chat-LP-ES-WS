@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 const LongPulling = () => {
-  const [messages, setMessages] = React.useState([]);
+  const [messages, setMessages] = React.useState<any[]>([]);
   const [value, setValue] = React.useState('');
 
   // Подписка с запросом на сервер
